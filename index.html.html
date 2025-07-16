@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vozes Entrelinhas BR</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos @2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <img src="img/logo.png" alt="Logo Vozes Entrelinhas BR" class="logo">
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#podcast">Podcast</a>
+        <a href="#contribuir">Contribuir</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h1>Vozes Entrelinhas BR</h1>
+      <p>Podcast de Literatura Brasileira</p>
+      <a href="#podcast" class="btn">🎧 Ouça nosso podcast</a>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="sobre" id="sobre">
+    <div class="container" data-aos="fade-up">
+      <h2>Sobre o Projeto</h2>
+      <p>
+        Somos apaixonados por literatura e educação. O Vozes Entrelinhas BR é um podcast que dá vida aos clássicos da literatura brasileira, promovendo o acesso ao conhecimento por meio de narrações, debates, entrevistas e reflexões profundas.
+      </p>
+      <p>
+        Nosso podcast é voltado tanto para estudantes quanto para apaixonados por leitura. Por meio de episódios acessíveis e envolventes, estimulamos a escuta ativa, a interpretação crítica e o contato com autores que marcaram nossa cultura.
+      </p>
+    </div>
+  </section>
+
+  <!-- Player de Podcast -->
+  <section class="podcast" id="podcast">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <h2>Último Episódio</h2>
+      
+      <div class="player">
+        <h3>🎙️ Episódio 01 – Quarto de Despejo: A Voz de Carolina Maria de Jesus</h3>
+        <audio id="audioPlayer" controls>
+          <source src="audio/exemplo.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <div class="progress-container">
+          <div class="progress" id="progressBar"></div>
+        </div>
+        <div class="time">
+          <span id="currentTime">00:00</span> / <span id="duration">00:00</span>
+        </div>
+        <button id="playPauseBtn">▶️</button>
+      </div>
+
+      <h3 style="margin-top: 2rem;">Próximos Episódios</h3>
+      <ul class="episodios">
+        <li>Episódio 02 – Machado de Assis: Memórias Póstumas em Voz Alta</li>
+        <li>Episódio 03 – Alencar e o Romantismo</li>
+        <li>Episódio 04 – Clarice: A alma nas palavras</li>
+        <li>Episódio 05 – Entrevista: A literatura e a espiritualidade</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contribuir -->
+  <section class="contribuir" id="contribuir">
+    <div class="container" data-aos="fade-up" data-aos-delay="200">
+      <h2>Como Contribuir</h2>
+      <p>Nos ajude a continuar esse projeto! Você pode contribuir via:</p>
+      <ul>
+        <li><strong>Pix:</strong> vozesentrelinhas@gmail.com</li>
+        <li><strong>Apoia.se:</strong> apoia.se/vozesentrelinhas</li>
+        <li><strong>Vaquinha Online:</strong> (link)</li>
+      </ul>
+      <p>Também podemos contar com você!</p>
+      <ul>
+        <li>Indique nosso podcast</li>
+        <li>Compartilhe nas redes sociais</li>
+        <li>Seja um colaborador ou voluntário</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contato" id="contato">
+    <div class="container" data-aos="fade-up" data-aos-delay="300">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco:</p>
+      <ul>
+        <li>📧 vozesentrelinhas@gmail.com</li>
+        <li>📸 Instagram: @vozesentrelinhas</li>
+        <li>📘 Facebook: fb.com/vozesentrelinhas</li>
+        <li>🐦 Twitter: @entrelinhasbr</li>
+      </ul>
+
+      <h3>Mande uma Mensagem</h3>
+      <form action="https://formspree.io/f/seu-token-aqui " method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Vozes Entrelinhas BR. Todos os direitos reservados.</p>
+      <p>Este site não coleta dados pessoais. Para mais informações, entre em contato.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos @2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
